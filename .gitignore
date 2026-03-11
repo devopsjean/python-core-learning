@@ -5,3 +5,5 @@ __pycache__/
 .ipynb_checkpoints/
 .ipython/
 .mypy_cache/
+local/
+10-mini-practice/
