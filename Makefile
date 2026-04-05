@@ -2,16 +2,7 @@ PYTHON := ./.venv/bin/python
 JUPYTER := ./.venv/bin/jupyter
 IPYTHONDIR := $(CURDIR)/.ipython
 JUPYTER_PATH := $(CURDIR)/.venv/share/jupyter
-NOTEBOOKS := \
-	01-variables-and-values/examples.ipynb \
-	02-data-types/examples.ipynb \
-	03-input-output/examples.ipynb \
-	04-conditionals/examples.ipynb \
-	05-loops/examples.ipynb \
-	06-functions/examples.ipynb \
-	07-collections/examples.ipynb \
-	08-errors-and-exceptions/examples.ipynb \
-	09-modules/examples.ipynb
+NOTEBOOKS := $(shell find 10-core-concepts -type f -name '*.ipynb' | sort)
 
 .PHONY: setup lab refresh-notebooks
 
